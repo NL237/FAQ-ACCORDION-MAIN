@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ accordion</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    :root{
+      --White: hsl(0, 0%, 100%);
+      --Light-pink: hsl(275, 100%, 97%);
+      --Grayish-purple: hsl(292, 16%, 49%);
+      --Dark-purple: hsl(292, 42%, 14%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: "Work sans";
+      background-color: var(--Light-pink);
+      background-image: url(assets/images/background-pattern-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    p{
+      font-size: 13px;
+    }
+    #tab{
+      background-color: var(--White);
+      padding: 20px;
+      width: 50%;
+      border-radius: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    #tab #heading{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    #tab #heading img{
+
+    }
+    #tab #heading h1{
+      color: var(--Dark-purple);
+    }
+    #tab .task{
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #tab .task .quest{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+    #tab .task .quest p{
+      color: var(--Dark-purple);
+      font-weight: 600;
+    }
+    #tab .task .quest img{
+
+    }
+    #tab .task .quest img:hover{
+      cursor: pointer;
+    }
+    #tab .task p{
+      color: var(--Grayish-purple);
+      font-weight: 200;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="tab">
+    <div id="heading">
+      <img src="assets/images/icon-star.svg" alt="">
+      <h1>FAQs</h1>
+    </div>
+
+    <div class="task task1">
+      <div class="quest">
+        <p>What is Frontend Mentor, and how will it help me?</p>
+        <img src="assets/images/icon-plus.svg" alt="">
+      </div>
+      <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
+      frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+      all levels and ideal for portfolio building.</p>
+    </div>
+
+    <div class="task task2">
+      <div class="quest">
+        <p>Is Frontend Mentor free?</p>
+        <img src="assets/images/icon-plus.svg" alt="">
+      </div>
+      <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+      option providing access to a range of projects suitable for all skill levels.</p>      
+    </div>
+
+    <div class="task task3">
+      <div class="quest">
+        <p>Can I use Frontend Mentor projects in my portfolio?</p>
+        <img src="assets/images/icon-plus.svg" alt="">
+      </div>
+      <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+      way to showcase your skills to potential employers!</p>
+    </div>
+
+    <div class="task task4">
+      <div class="quest">
+        <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+        <img src="assets/images/icon-plus.svg" alt="">
+      </div>
+      <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+      channel where you can ask questions and seek support from other community members.</p>
+    </div>
+
+  </div>
+</body>
+</html>
