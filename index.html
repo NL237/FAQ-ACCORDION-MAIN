@@ -66,6 +66,10 @@
       color: var(--Dark-purple);
       font-weight: 600;
     }
+    #tab .task .quest p:hover{
+      cursor: pointer;
+      color: var(--Grayish-purple);
+    }
     #tab .task .quest img{
 
     }
@@ -75,6 +79,15 @@
     #tab .task p{
       color: var(--Grayish-purple);
       font-weight: 200;
+    }
+    @media screen and (max-width: 450px){
+      body{
+        background-image: url(assets/images/background-pattern-mobile.svg);
+      }
+      #tab{
+        width: 85%;
+      }
+      
     }
 
   </style>
@@ -90,7 +103,7 @@
     <div class="task task1">
       <div class="quest">
         <p>What is Frontend Mentor, and how will it help me?</p>
-        <img src="assets/images/icon-plus.svg" alt="">
+        <img src="assets/images/icon-plus.svg" alt="" class="plus">
       </div>
       <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
       frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
@@ -100,7 +113,7 @@
     <div class="task task2">
       <div class="quest">
         <p>Is Frontend Mentor free?</p>
-        <img src="assets/images/icon-plus.svg" alt="">
+        <img src="assets/images/icon-plus.svg" alt="" class="plus">
       </div>
       <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
       option providing access to a range of projects suitable for all skill levels.</p>      
@@ -109,7 +122,7 @@
     <div class="task task3">
       <div class="quest">
         <p>Can I use Frontend Mentor projects in my portfolio?</p>
-        <img src="assets/images/icon-plus.svg" alt="">
+        <img src="assets/images/icon-plus.svg" alt="" class="plus">
       </div>
       <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
       way to showcase your skills to potential employers!</p>
@@ -118,7 +131,7 @@
     <div class="task task4">
       <div class="quest">
         <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
-        <img src="assets/images/icon-plus.svg" alt="">
+        <img src="assets/images/icon-plus.svg" alt="" class="plus">
       </div>
       <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
       channel where you can ask questions and seek support from other community members.</p>

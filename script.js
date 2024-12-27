@@ -1,0 +1,1 @@
+document.getElementsByClassName('plus').content =;
